@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /*direction: rtl;*/
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: #303030;
+}
+
+.holder {
+  padding: 30px 200px;
+}
+
+.navbar {
+  padding: 10px 200px;
+}
+
+.navbar .navbar-brand {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+#topMenu ul li {
+  text-align: center;
+  padding: 0.5rem 0.7rem 0;
+}
+
+#topMenu ul li a {
+  font-size: 1rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+#header {
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .textHolder span {
+  font-size: 1.8rem;
+  color: #696969;
+}
+
+#header .textHolder h1 {
+  font-size: 3rem;
+}
+
+#header .textHolder h2 {
+  font-size: 1.8rem;
+  color: #696969;
+}
+
+#header .textHolder button {
+  width: 11rem;
+  font-size: 1rem;
+  background-color: orange;
+  border-color: transparent;
+  color: #ffffff;
+  margin: 1rem 0rem;
+}
+
+#header .textHolder button.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#header .imgHolder img {
+  width: 100%;
+  height: auto;
+}
+
+#aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutMe .textHolder h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#aboutMe .textHolder p {
+  font-size: 1rem;
+}
+
+#aboutMe .textHolder .buttonHolder {
+  margin: 1rem 0rem;
+}
+
+#aboutMe .textHolder .buttonHolder button {
+  margin: 0.5rem 0.2rem;
+}
+
+#aboutMe .textHolder button {
+  width: 11rem;
+  font-size: 1rem;
+  background-color: orange;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+#aboutMe .textHolder button.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#aboutMe .textHolder button.whiteBtn {
+  width: 11rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: orange;
+  color: orange;
+}
+
+#aboutMe .textHolder button.whiteBtn.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#services .textHolder {
+  text-align: center;
+}
+
+#services .textHolder h3 {
+  font-size: 2.5rem;
+}
+
+#services .textHolder p {
+  font-size: 1rem;
+}
+
+#services .serviceHolder {
+  width: 100vw;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#services .serviceHolder div.box:nth-child(1) {
+  color: #ffffff;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 50px 40px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  background-color: #5a5afc;
+}
+
+#services .serviceHolder div.box:nth-child(2) {
+  color: #ffffff;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 50px 40px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  background-color: orange;
+}
+
+#services .serviceHolder div.box:nth-child(3) {
+  color: #ffffff;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 50px 40px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  background-color: #fc34fc;
+}
+
+#services .serviceHolder div.box:nth-child(4) {
+  color: #ffffff;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 50px 40px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  background-color: #42b342;
+}
+
+#services .serviceHolder i.fas {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .holder {
+    padding: 30px 80px;
+  }
+  .navbar {
+    padding: 5px 90px;
+  }
+  #header .textHolder span,
+  #header .textHolder h2 {
+    font-size: 1.5rem;
+  }
+  #header .textHolder h1 {
+    font-size: 2.5rem;
+  }
+  #aboutMe .textHolder {
+    text-align: justify;
+  }
+  #aboutMe .textHolder .buttonHolder {
+    text-align: center;
+  }
+  #aboutMe .textHolder p {
+    text-align: justify;
+  }
+  #services .textHolder p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .holder {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .navbar {
+    padding: 5px 30px;
+  }
+  #services .serviceHolder div {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
